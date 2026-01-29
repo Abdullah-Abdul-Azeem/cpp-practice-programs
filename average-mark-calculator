@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+#include <string>
+int main()
+{
+    string name;
+    int mark1, mark2, mark3;
+    float average;
+    
+    cout<<"Please enter your name: ";
+    cin>>name;
+    
+    cout<<"Please enter 3 marks out of 100: ";
+    cin>>mark1>>mark2>>mark3;
+    
+    average = (mark1 + mark2 + mark3) / static_cast<float>(3);
+    
+    cout<<"The average mark of "<<name<<" is "<<average;
+
+    return 0;
+}
